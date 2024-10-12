@@ -1,0 +1,202 @@
+Below is the full content for each file in MY portfolio project
+
+1. index.html
+This is the main HTML file for your portfolio website.
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananthagari Venkata Balaji's Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hello, I am Ananthagari Venkata Balaji</h1>
+        <p>Welcome to my portfolio website!</p>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a passionate developer and technology enthusiast currently pursuing B.Tech.
+                I have experience in web development, AI, ML, and various other technical fields.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="scrollable-content">
+                <p>I have worked on various projects, including:</p>
+                <ul>
+                    <li>Foot Step Power Generator project</li>
+                    <li>Hackathons including NASA Space Apps Challenge</li>
+                    <li>Internship at Teachnook focusing on AI/ML</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2>IT Courses</h2>
+            <p>
+                I offer several IT-related courses, including Data Science, Web Development, and more. Contact me for more details.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out to me via the links below!</p>
+            <div class="contact-buttons">
+                <button id="email-btn">Email</button>
+                <button id="whatsapp-btn">WhatsApp</button>
+                <button id="linkedin-btn">LinkedIn</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+2. css/styles.css
+The main CSS file for styling your portfolio website.
+
+css
+Copy code
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #4CAF50, #2E8B57);
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
+
+h1, h2 {
+    margin: 0.5em 0;
+}
+
+main {
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+/* About Section */
+#about {
+    padding: 2em 0;
+}
+
+/* Experience Section */
+#experience {
+    padding: 2em 0;
+}
+
+.scrollable-content {
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 1em;
+}
+
+/* Courses Section */
+#courses {
+    padding: 2em 0;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2em 0;
+}
+
+.contact-buttons button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 1em;
+    color: white;
+    margin: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Scrolling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+3. js/scripts.js
+Basic JavaScript for your website's interactivity.
+
+javascript
+Copy code
+document.addEventListener("DOMContentLoaded", function() {
+    // Contact buttons
+    document.getElementById("email-btn").addEventListener("click", function() {
+        window.location.href = "mailto:your-email@example.com";
+    });
+
+    document.getElementById("whatsapp-btn").addEventListener("click", function() {
+        window.open("https://wa.me/your-whatsapp-number");
+    });
+
+    document.getElementById("linkedin-btn").addEventListener("click", function() {
+        window.open("https://linkedin.com/in/your-profile");
+    });
+});
+4. assets/
+This folder will hold any additional files like fonts or icons that you might need.
+
+5. images/
+Place your profile image or other images used on your site in this folder. If you have a profile picture, reference it in the index.html like this:
+
+html
+Copy code
+<img src="images/profile.jpg" alt="Your Profile Picture">
+6. css/, js/
+These folders already contain your styles.css and scripts.js.
+
+Uploading Steps to GitHub:
+Once your folder structure and file contents are ready:
+
+Open Git Bash or any Git client.
+Navigate to your project folder (MyFortfolio1).
+Initialize Git, commit, and push to GitHub using the following commands:
+bash
+Copy code
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/your-username/MyFortfolio-AnanthagariVenkataBalaji.git
+git push -u origin master
+Now your portfolio will be live on GitHub Pages once you set it as a GitHub Pages project! Let me know if you need more details.
